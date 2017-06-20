@@ -1,0 +1,16 @@
+<h1>
+  {{title}}
+</h1>
+<div class="row columns">
+
+<button (click)="loginWithGoogle()" *ngIf="!name">Login with Google</button>
+
+<input type="text" id="message" *ngIf="name" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
+
+    <div class="chat-container" *ngFor="let item of items | async">
+      <a href="#">{{item.name}}</a>
+
+      <p>{{item.message}}</p>
+    </div>
+
+</div>

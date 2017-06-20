@@ -67,5 +67,6 @@ export class AppComponent {
   }
   logout(){
     this.af.auth.signOut();
+    this.name = null;
   }
 }

@@ -1,6 +1,11 @@
 # AuthTest
 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+## Firebase Auth Test
+
+_Project created to develop and test firebase/Angularfire Google auth and user interactions. Auth and chat function, deployed via firebase.
 
 ## Development server
 
